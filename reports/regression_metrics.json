@@ -1,0 +1,120 @@
+{
+  "best_model": "LinearRegression_Ridge",
+  "xgb_best_params": {
+    "subsample": 1.0,
+    "n_estimators": 700,
+    "min_child_weight": 1,
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "colsample_bytree": 0.8
+  },
+  "results": {
+    "Benchmark_Fixed8pct": {
+      "test_rmse": 14.578588336389421,
+      "test_mae": 10.309472323997586,
+      "test_r2": 0.9951618602903033,
+      "test_mape_pct": 2.7320957533852583,
+      "test_growth_rmse_pp": 0.7303708123655777
+    },
+    "Benchmark_TierAvgGrowth": {
+      "test_rmse": 11.5521342559887,
+      "test_mae": 8.128309662864627,
+      "test_r2": 0.9969621109057627,
+      "test_mape_pct": 2.162731588917359,
+      "test_growth_rmse_pp": 0.5798252899453177
+    },
+    "LinearRegression_Ridge": {
+      "val_rmse": 0.7986346629582736,
+      "val_mae": 0.6232445989186618,
+      "val_r2": 0.9999853283111821,
+      "val_mape_pct": 0.21617222561540628,
+      "val_growth_rmse_pp": 0.07065989553007487,
+      "test_rmse": 0.7998729965055551,
+      "test_mae": 0.6241221388846704,
+      "test_r2": 0.9999854357028696,
+      "test_mape_pct": 0.22209717465189308,
+      "test_growth_rmse_pp": 0.07456425307818708,
+      "fit_seconds": 2.1874563694000244
+    },
+    "RandomForest": {
+      "val_rmse": 4.03176765497696,
+      "val_mae": 2.920795030840541,
+      "val_r2": 0.999626083363682,
+      "val_mape_pct": 0.8796395512520372,
+      "val_growth_rmse_pp": 0.2457894227952925,
+      "test_rmse": 4.009735955201856,
+      "test_mae": 2.901157352897468,
+      "test_r2": 0.9996340017494335,
+      "test_mape_pct": 0.8782793431854156,
+      "test_growth_rmse_pp": 0.24555468923751766,
+      "fit_seconds": 75.03312706947327
+    },
+    "XGBoost_Tuned": {
+      "val_rmse": 1.271792282205668,
+      "val_mae": 1.002445894105984,
+      "val_r2": 0.9999627937272203,
+      "val_mape_pct": 0.43617805084387856,
+      "val_growth_rmse_pp": 0.16969103041703806,
+      "test_rmse": 1.2714640977200546,
+      "test_mae": 1.0048657891815793,
+      "test_r2": 0.9999631993353181,
+      "test_mape_pct": 0.44677812687681273,
+      "test_growth_rmse_pp": 0.1756670289863922,
+      "fit_seconds": 21.271746158599854
+    }
+  },
+  "tier_avg_growth_used_in_benchmark": {
+    "Tier-1": 0.0801,
+    "Tier-2": 0.0851,
+    "Tier-3": 0.0751
+  },
+  "top_features": {
+    "Log_Price": 2.0736,
+    "City_Tier": 0.0029,
+    "Age_of_Property": 0.0015,
+    "Price_in_Lakhs": 0.0013,
+    "Is_Ready_To_Move": 0.0011,
+    "Property_Type": 0.0007,
+    "Infrastructure_Score": 0.0005,
+    "Transport_Score": 0.0004,
+    "Nearby_Schools": 0.0001,
+    "School_Density_Score": 0.0001
+  },
+  "features_used": [
+    "BHK",
+    "Size_in_SqFt",
+    "Price_in_Lakhs",
+    "Price_per_SqFt_INR",
+    "Age_of_Property",
+    "Floor_No",
+    "Total_Floors",
+    "Floor_Ratio",
+    "Nearby_Schools",
+    "Nearby_Hospitals",
+    "Transport_Score",
+    "School_Density_Score",
+    "Hospital_Density_Score",
+    "Infrastructure_Score",
+    "Amenity_Count",
+    "Has_Gym",
+    "Has_Pool",
+    "Has_Clubhouse",
+    "Has_Playground",
+    "Has_Garden",
+    "Has_Parking",
+    "Has_Security",
+    "Is_Ready_To_Move",
+    "SqFt_per_BHK",
+    "City_Median_PPSF",
+    "City_Median_Price",
+    "PPSF_vs_City_Median",
+    "Log_Price",
+    "Log_Size",
+    "Property_Type",
+    "Furnished_Status",
+    "Facing",
+    "Owner_Type",
+    "City",
+    "City_Tier"
+  ]
+}

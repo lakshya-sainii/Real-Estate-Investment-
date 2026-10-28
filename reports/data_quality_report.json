@@ -1,0 +1,27 @@
+{
+  "raw_rows": 250000,
+  "raw_columns": 23,
+  "missing_values_before": 0,
+  "duplicate_rows_removed": 0,
+  "age_inconsistent_rows": 0,
+  "floor_gt_total_rows": 116304,
+  "floor_gt_total_pct": 46.52,
+  "outliers": {
+    "Outlier_PPSF": 19723,
+    "Outlier_Size": 0,
+    "Outlier_Price": 0
+  },
+  "good_investment_rate": 0.5598,
+  "growth_rate_summary": {
+    "count": 250000.0,
+    "mean": 0.0808,
+    "std": 0.0073,
+    "min": 0.0558,
+    "25%": 0.0758,
+    "50%": 0.081,
+    "75%": 0.086,
+    "max": 0.1044
+  },
+  "final_rows": 250000,
+  "final_columns": 59
+}

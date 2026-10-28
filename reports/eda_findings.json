@@ -1,0 +1,195 @@
+{
+  "Q1": {
+    "count": 250000.0,
+    "mean": 254.59,
+    "std": 141.35,
+    "min": 10.0,
+    "25%": 132.55,
+    "50%": 253.87,
+    "75%": 376.88,
+    "max": 500.0
+  },
+  "Q2": {
+    "count": 250000.0,
+    "mean": 2749.81,
+    "std": 1300.61,
+    "min": 500.0,
+    "25%": 1623.0,
+    "50%": 2747.0,
+    "75%": 3874.0,
+    "max": 5000.0
+  },
+  "Q3": {
+    "mean": {
+      "Apartment": 13047.0,
+      "Independent House": 13102.0,
+      "Villa": 13026.0
+    },
+    "median": {
+      "Apartment": 9245.0,
+      "Independent House": 9305.0,
+      "Villa": 9190.0
+    }
+  },
+  "Q4": {
+    "pearson_size_price": -0.0025,
+    "pearson_size_ppsf": -0.6146
+  },
+  "Q5": {
+    "ppsf_outliers_iqr": 19723,
+    "ppsf_outlier_pct": 7.89,
+    "size_outliers": 0,
+    "ppsf_p50": 9245,
+    "ppsf_p99": 65823,
+    "ppsf_max": 99182
+  },
+  "Q6": {
+    "highest": [
+      "Karnataka",
+      13252
+    ],
+    "lowest": [
+      "Punjab",
+      12931
+    ],
+    "spread_pct": 2.48
+  },
+  "Q7": {
+    "highest": [
+      "Bangalore",
+      258.5
+    ],
+    "lowest": [
+      "Cuttack",
+      250.8
+    ],
+    "spread_pct": 3.06
+  },
+  "Q8": {
+    "min": 16.0,
+    "max": 21.0,
+    "median": 18.0,
+    "top5_oldest": {
+      "Locality_72": 21.0,
+      "Locality_403": 21.0,
+      "Locality_90": 20.0,
+      "Locality_491": 20.0,
+      "Locality_99": 20.0
+    }
+  },
+  "Q9": {
+    "overall_bhk_pct": {
+      "1": 20.1,
+      "2": 19.9,
+      "3": 20.0,
+      "4": 19.9,
+      "5": 20.1
+    },
+    "max_city_deviation_pp": 1.88
+  },
+  "Q10": {
+    "top5_localities": [
+      "Locality_207",
+      "Locality_416",
+      "Locality_246",
+      "Locality_359",
+      "Locality_387"
+    ],
+    "avg_ppsf": {
+      "Locality_207": 15204.0,
+      "Locality_246": 14567.0,
+      "Locality_359": 14485.0,
+      "Locality_387": 14430.0,
+      "Locality_416": 14765.0
+    },
+    "top5_vs_overall_gap_pct": 12.44
+  },
+  "Q11": {
+    "top_pairs": {
+      "Price_per_SqFt_INR | Size_in_SqFt": -0.615,
+      "Total_Floors | Floor_No": 0.602,
+      "Price_per_SqFt_INR | Price_in_Lakhs": 0.556
+    },
+    "price_vs_ppsf": 0.556,
+    "size_vs_ppsf": -0.615
+  },
+  "Q12": {
+    "pearson_schools_ppsf": -0.0001
+  },
+  "Q13": {
+    "pearson_hospitals_ppsf": -0.0001
+  },
+  "Q14": {
+    "mean": {
+      "Furnished": 254.4,
+      "Semi-furnished": 254.3,
+      "Unfurnished": 255.0
+    },
+    "median": {
+      "Furnished": 253.6,
+      "Semi-furnished": 253.8,
+      "Unfurnished": 254.2
+    }
+  },
+  "Q15": {
+    "East": 13024.0,
+    "North": 13025.0,
+    "South": 13044.0,
+    "West": 13140.0
+  },
+  "Q16": {
+    "Broker": 83479,
+    "Owner": 83268,
+    "Builder": 83253
+  },
+  "Q17": {
+    "Under_Construction": 125035,
+    "Ready_to_Move": 124965
+  },
+  "Q18": {
+    "No": 254.43,
+    "Yes": 254.75
+  },
+  "Q19": {
+    "ppsf_with_vs_without_pct": {
+      "Gym": 0.75,
+      "Pool": 0.28,
+      "Clubhouse": 0.22,
+      "Playground": -0.18,
+      "Garden": 0.12
+    },
+    "amenity_count_ppsf_corr": 0.002
+  },
+  "Q20": {
+    "ppsf": {
+      "High": 13027.0,
+      "Low": 13086.0,
+      "Medium": 13062.0
+    },
+    "good_investment_pct": {
+      "Low": 44.13,
+      "Medium": 57.25,
+      "High": 66.52
+    }
+  },
+  "Tier_growth_pct": {
+    "Tier-1": 8.01,
+    "Tier-2": 8.51,
+    "Tier-3": 7.51
+  },
+  "GoodInv_rate_by_city_top5": {
+    "Guwahati": 57.0,
+    "Jodhpur": 56.9,
+    "Bilaspur": 56.7,
+    "Warangal": 56.6,
+    "Vishakhapatnam": 56.6
+  },
+  "GoodInv_rate_overall_pct": 55.98,
+  "Area_vs_good_investment_corr": 0.1861,
+  "Infra_vs_future_price_corr": 0.0309,
+  "Infra_vs_ppsf_corr": -0.0014,
+  "Area_vs_growth_corr": 0.0036,
+  "Crime_rate_note": "No crime-rate column exists in india_housing_prices.csv; analysis not possible. Infrastructure proxy used instead.",
+  "Max_abs_corr_with_price": 0.0028,
+  "Locality_repeats_across_cities": 42
+}

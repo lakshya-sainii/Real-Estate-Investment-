@@ -1,0 +1,33 @@
+train 175,000 | val 37,500 | test 37,500 | positive rate 0.560
+2026/10/25 12:23:45 INFO mlflow.store.db.utils: Creating initial MLflow database tables...
+2026/10/25 12:23:45 INFO mlflow.store.db.utils: Updating database tables
+XGB search 32 s -> {'subsample': 0.8, 'n_estimators': 200, 'min_child_weight': 1, 'max_depth': 4, 'learning_rate': 0.2, 'colsample_bytree': 0.8} cv_f1 0.9986
+Baseline_MajorityClass   val_F1=0.7178 test_F1=0.7178 test_acc=0.5598 AUC=0.5000 (1s)
+LogisticRegression       val_F1=0.9031 test_F1=0.9015 test_acc=0.8894 AUC=0.9635 (1s)
+RandomForest             val_F1=0.9989 test_F1=0.9990 test_acc=0.9989 AUC=1.0000 (57s)
+XGBoost_Tuned            val_F1=0.9995 test_F1=0.9996 test_acc=0.9995 AUC=1.0000 (8s)
+BEST (validation F1): XGBoost_Tuned
+2026/10/25 12:25:55 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html
+Successfully registered model 'GoodInvestmentClassifier'.
+Created version '1' of model 'GoodInvestmentClassifier'.
+{
+ "best_model": "XGBoost_Tuned",
+ "cv5_f1_mean": 0.998970544394683,
+ "ablation_no_market_context_test": {
+  "accuracy": 0.99856,
+  "f1": 0.9987140407696704,
+  "roc_auc": 0.9999929155059579
+ },
+ "top_features": {
+  "Price_in_Lakhs": 0.1641,
+  "PPSF_vs_City_Median": 0.1631,
+  "Is_Ready_To_Move": 0.1368,
+  "Infrastructure_Score": 0.1328,
+  "BHK": 0.1322,
+  "City_Median_Price": 0.0018,
+  "Property_Type": 0.0001,
+  "Hospital_Density_Score": 0.0001,
+  "Size_in_SqFt": 0.0,
+  "Nearby_Hospitals": 0.0
+ }
+}

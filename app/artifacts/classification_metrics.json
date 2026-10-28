@@ -1,0 +1,99 @@
+{
+  "best_model": "XGBoost_Tuned",
+  "split": {
+    "train": 175000,
+    "val": 37500,
+    "test": 37500
+  },
+  "xgb_best_params": {
+    "subsample": 0.8,
+    "n_estimators": 200,
+    "min_child_weight": 1,
+    "max_depth": 4,
+    "learning_rate": 0.2,
+    "colsample_bytree": 0.8
+  },
+  "results": {
+    "Baseline_MajorityClass": {
+      "val_accuracy": 0.55984,
+      "val_precision": 0.55984,
+      "val_recall": 1.0,
+      "val_f1": 0.7178172120217459,
+      "val_roc_auc": 0.5,
+      "test_accuracy": 0.5598133333333334,
+      "test_precision": 0.5598133333333334,
+      "test_recall": 1.0,
+      "test_f1": 0.7177952917443113,
+      "test_roc_auc": 0.5,
+      "fit_seconds": 1.3566806316375732
+    },
+    "LogisticRegression": {
+      "val_accuracy": 0.8912266666666666,
+      "val_precision": 0.9005446365143263,
+      "val_recall": 0.9057349718967324,
+      "val_f1": 0.9031323470042034,
+      "val_roc_auc": 0.9634450322313157,
+      "test_accuracy": 0.88936,
+      "test_precision": 0.8984293689090737,
+      "test_recall": 0.9046348782927642,
+      "test_f1": 0.9015214450167335,
+      "test_roc_auc": 0.9634826219568741,
+      "fit_seconds": 0.8151423931121826
+    },
+    "RandomForest": {
+      "val_accuracy": 0.9988,
+      "val_precision": 0.9987144693615198,
+      "val_recall": 0.9991426121749071,
+      "val_f1": 0.9989284948924924,
+      "val_roc_auc": 0.9999937782619421,
+      "test_accuracy": 0.9988533333333334,
+      "test_precision": 0.9988570340032384,
+      "test_recall": 0.9990949364073739,
+      "test_f1": 0.9989759710414137,
+      "test_roc_auc": 0.9999911552039759,
+      "fit_seconds": 56.88977313041687
+    },
+    "XGBoost_Tuned": {
+      "val_accuracy": 0.99944,
+      "val_precision": 0.9993333650778534,
+      "val_recall": 0.9996665714013527,
+      "val_f1": 0.9994999404691035,
+      "val_roc_auc": 0.99999783566626,
+      "test_accuracy": 0.9995466666666667,
+      "test_precision": 0.9994761405848176,
+      "test_recall": 0.9997141904444339,
+      "test_f1": 0.9995951513419542,
+      "test_roc_auc": 0.999998551358041,
+      "fit_seconds": 7.883513927459717
+    }
+  },
+  "confusion_matrix_test": [
+    [
+      16496,
+      11
+    ],
+    [
+      6,
+      20987
+    ]
+  ],
+  "cv5_f1_mean": 0.998970544394683,
+  "cv5_f1_std": 0.0003876440071619685,
+  "ablation_no_market_context_test": {
+    "accuracy": 0.99856,
+    "f1": 0.9987140407696704,
+    "roc_auc": 0.9999929155059579
+  },
+  "top_features": {
+    "Price_in_Lakhs": 0.1641,
+    "PPSF_vs_City_Median": 0.1631,
+    "Is_Ready_To_Move": 0.1368,
+    "Infrastructure_Score": 0.1328,
+    "BHK": 0.1322,
+    "City_Median_Price": 0.0018,
+    "Property_Type": 0.0001,
+    "Hospital_Density_Score": 0.0001,
+    "Size_in_SqFt": 0.0,
+    "Nearby_Hospitals": 0.0
+  }
+}

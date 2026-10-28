@@ -1,0 +1,19 @@
+{
+  "runtime_model": "HistGradientBoostingClassifier",
+  "purpose": "Portable distillation of the deterministic five-criterion investment rule",
+  "features": [
+    "PPSF_vs_City_Median",
+    "Price_vs_City_Median",
+    "BHK",
+    "Is_Ready_To_Move",
+    "Infrastructure_Score"
+  ],
+  "rule_example_validation": {
+    "rows": 30000,
+    "accuracy": 0.9980666666666667,
+    "f1": 0.9981411447984103,
+    "roc_auc": 0.9999909101901683
+  },
+  "research_model": "XGBoost_Tuned; see reports/classification_metrics.json",
+  "note": "Validation is on held-out rule examples, not a real-market forecasting benchmark."
+}
