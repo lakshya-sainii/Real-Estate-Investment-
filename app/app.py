@@ -24,13 +24,33 @@ PAGES = [
     ("Performance", st.Page("views/performance.py", title="Performance")),
     ("About", st.Page("views/about.py", title="About")),
 ]
-nav = st.navigation([p for _, p in PAGES], position="hidden")
+
+nav = st.navigation(
+    [page for _, page in PAGES],
+    position="hidden"
+)
+
 with st.container(key="topnav"):
-    cols = st.columns([1.7, .8, .8, 1.15, .9, 1.1, 1.1, .8], vertical_alignment="center")
+    cols = st.columns(
+        [1.7, .8, .8, 1.15, .9, 1.1, 1.1, .8],
+        vertical_alignment="center"
+    )
+
     cols[0].markdown(
-        '<div class="brand"><span class="brand-mark"></span><span class="brand-text">Estate IQ</span></div>',
+        '<div class="brand">'
+        '<span class="brand-mark"></span>'
+        '<span class="brand-text">Estate IQ</span>'
+        '</div>',
         unsafe_allow_html=True,
     )
+
     for c, (label, page) in zip(cols[1:], PAGES):
-        c.page_link(page, label=label)
+        with c:
+            st.page_link(
+                page,
+                label=label,
+                use_container_width=True
+            )
+
 nav.run()
+
